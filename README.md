@@ -237,7 +237,7 @@ Project Link: [https://github.com/bayquen/flockplan](https://github.com/bayquen/
 [issues-url]: https://github.com/bayquen/flockplan/issues
 [license-shield]: https://img.shields.io/github/license/bayquen/flockplan.svg?style=for-the-badge
 [license-url]: https://github.com/bayquen/flockplan/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=5FF
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0005FF
 [linkedin-url]: https://linkedin.com/in/bayquen
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
