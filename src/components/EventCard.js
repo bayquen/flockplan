@@ -7,7 +7,7 @@
 
 // import '.EventCard.css';
 
-function EventCard({ event, onDelete, onEdit }) {
+export default function EventCard({ event, onDelete, onEdit }) {
     const formatDate = (dateString) => {
         return new Date(dateString).toLocaleDateString();   // returns a readable Date based on the user's geo-region
     };
@@ -21,7 +21,14 @@ function EventCard({ event, onDelete, onEdit }) {
             <p><strong>Status:</strong>
                 <span className={`status ${event.status}`}>{event.status}</span>
             </p>
+            <div className="event-actions">
+                <button onClick={() => onEdit(event.id)} className="edit-btn">
+                    Edit
+                </button>
+                <button onClick={() => onDelete(event.id)} className="delete-btn">
+                    Delete
+                </button>
+            </div>
         </div>
-    )
-
+    );
 }
