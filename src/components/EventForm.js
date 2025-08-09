@@ -1,3 +1,9 @@
+/*
+ Author:            Brandon Bayquen
+ Last modified:     July 2025
+ Description:       "Component for user form settings to create or edit events and informational data"
+*/
+
 import { useState } from 'react';
 // import './EventForm.css';
 
