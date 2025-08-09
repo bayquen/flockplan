@@ -60,7 +60,20 @@ export default function EventForm( { onSubmit, editingEvent, onCancel }) {
                 onChange={handleChange}
                 required
             />
-        </form>
-    )
+            <select name="status" value={formData.status} onChange={handleChange}>
+                <option value="planned">Planned</option>
+                <option value="in-progress">In Progress</option>
+                <option value="finished">Finished</option>
+            </select>
 
+            <div className="form-actions">
+                <button type="submit">
+                    {editingEvent ? 'Update Event' : 'Create Event'}
+                </button>
+                {editingEvent && (
+                    <button type="button" onClick={onCancel}>Cancel</button>
+                )}
+            </div>
+        </form>
+    );
 }
