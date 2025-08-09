@@ -11,26 +11,56 @@ export default function EventForm( { onSubmit, editingEvent, onCancel }) {
     });
 
     const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();    // Prevents default page reload after user's form submission
+        e.preventDefault();
         if (editingEvent) {
             onSubmit({ ...formData, id: editingEvent.id });
         } else {
             onSubmit({ ...formData, id: Date.now() });
         }
-        setFormData({
-            title: '',
-            date: '',
-            time: '',
-            location: '',
-            status: 'planned',
-        });
-    }
-    
+        setFormData({ title: '', date: '', time: '', location: '', status: 'planned' });
+    };
+
+    return (
+        <form className="event-form" onSubmit={handleSubmit}>
+            <h2>{editingEvent ? 'Edit Event' : 'Create New Event'}</h2>
+
+            <input
+                type="text"
+                name="title"
+                placeholder="Event Title"
+                value={formData.title}
+                onChange={handleChange}
+                required
+            />
+
+            <input
+                type="date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
+                required
+            />
+
+            <input 
+                type="time"
+                name="time"
+                value={formData.time}
+                onChange={handleChange}
+                required
+            />
+            <input 
+                type="text"
+                name="location"
+                placeholder="Location"
+                value={formData.location}
+                onChange={handleChange}
+                required
+            />
+        </form>
+    )
+
 }
