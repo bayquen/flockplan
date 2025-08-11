@@ -11,7 +11,7 @@ export default function EventList( { events, onDelete, onEdit }) {
     if (events.length === 0) {
         return (
             <div className="event-list-empty">
-                <p>Hmm...no events yet. Create or add your first event!</p>
+                <p>Hmm...no events yet. Create your first event!</p>
             </div>
         );
     }

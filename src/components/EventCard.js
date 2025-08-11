@@ -18,7 +18,7 @@ export default function EventCard({ event, onDelete, onEdit }) {
             <p><strong>Date:</strong> {formatDate(event.date)}</p>
             <p><strong>Time:</strong> {event.time}</p>
             <p><strong>Location:</strong> {event.location}</p>
-            <p><strong>Status:</strong>
+            <p><strong>Status: </strong>
                 <span className={`status ${event.status}`}>{event.status}</span>
             </p>
             <div className="event-actions">

@@ -67,9 +67,9 @@ export default function EventForm( { onSubmit, editingEvent, onCancel }) {
                 required
             />
             <select name="status" value={formData.status} onChange={handleChange}>
-                <option value="planned">Planned</option>
-                <option value="in-progress">In Progress</option>
-                <option value="finished">Finished</option>
+                <option value="Planned">Planned</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Finished">Finished</option>
             </select>
 
             <div className="form-actions">
