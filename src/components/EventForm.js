@@ -1,6 +1,6 @@
 /*
  Author:            Brandon Bayquen
- Last modified:     July 2025
+ Last modified:     August 2025
  Description:       "Component for user form settings to create or edit events and informational data"
 */
 
