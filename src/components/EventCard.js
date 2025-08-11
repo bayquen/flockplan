@@ -2,7 +2,8 @@
  Author:            Brandon Bayquen
  Last modified:     August 2025
  Description:       "Component that creates a simple card representing an event and its description.
-                    Includes info like event name, date & time, location, and status."
+                    Includes info like event name, date & time, location, and status. EventCard is 
+                    directly used by the ./EventList.js component"
 */
 
 // import '.EventCard.css';
