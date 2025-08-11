@@ -1,7 +1,7 @@
 /*
  Author:            Brandon Bayquen
  Last modified:     August 2025
- Description:       "Component to showcase list of available (or completed) events on FlockPlan"
+ Description:       "Component to showcase list of available (or completed) events in cards on FlockPlan"
 */
 
 // import './EventList.css'
